@@ -28,16 +28,18 @@ function App() {
     <div className="coin-app">
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
-        <form>
-          <input
-            className="coin-input"
-            type="text
-        
-          "
-            onChange={handleChange}
-            placeholder="Search"
-          />
-        </form>
+        <div className="coin-container">
+          <form>
+            <input
+              className="form-control mb-3"
+              type="text
+          
+            "
+              onChange={handleChange}
+              placeholder="Search.."
+            />
+          </form>
+        </div>
       </div>
       {filteredCoins.map((coin) => {
         return (
